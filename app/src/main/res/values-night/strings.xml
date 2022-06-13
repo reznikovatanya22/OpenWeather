@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_msg">Произошла ошибка Current Weather... Проверьте интернет-соединение...</string>
+    <string name="error_msg_search">Произошла ошибка Current Weather Search... Проверьте интернет-соединение...</string>
+    <string name="error_msg_hourly">Произошла ошибка Hourly Forecast... Проверьте интернет-соединение...</string>
+    <string name="error_msg_daily">Произошла ошибка Daily Forecast... Проверьте интернет-соединение...</string>
+    <string name="search_city_item_cityname">Название города</string>
+    <string name="hourly_weather_item_time">Время</string>
+    <string name="hourly_weather_item_temp">Температура</string>
+    <string name="fragment_weather_current_temp">Температура</string>
+    <string name="fragment_weather_current_description">Описание</string>
+    <string name="fragment_weather_current_humidity">Влажность</string>
+    <string name="fragment_weather_current_wind">Ветер</string>
+    <string name="fragment_weather_current_cityname">Название города</string>
+    <string name="fragment_search_cityname">Название города...</string>
+    <string name="daily_item_date">Дата</string>
+    <string name="daily_item_temp">Температура</string>
+    <string name="daily_item_wind">Ветер</string>
+</resources>

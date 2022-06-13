@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/data_daily_ll"
+    style="@style/settings_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tv_date_time_daily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:text="@string/daily_item_date"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/img_weather_pictures_daily"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_baseline_cloud_queue_24"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_temperature_daily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:text="@string/daily_item_temp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_wind_daily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:text="@string/daily_item_wind"
+        android:textSize="14sp" />
+
+</LinearLayout>

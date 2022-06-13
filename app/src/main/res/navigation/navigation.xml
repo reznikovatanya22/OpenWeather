@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/searchFragment">
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.tanyareznikova.openweather.presentation.search_screen.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_weatherFragment"
+            app:destination="@id/weatherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:name="com.tanyareznikova.openweather.presentation.weather_screen.WeatherFragment"
+        android:label="fragment_weather"
+        tools:layout="@layout/fragment_weather" >
+        <argument
+            android:name="currentTemp"
+            app:argType="com.tanyareznikova.openweather.domain.model.weather.WeatherModel"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="currentDescription"
+            app:argType="com.tanyareznikova.openweather.domain.model.weather.WeatherModel"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="currentHumidity"
+            app:argType="com.tanyareznikova.openweather.domain.model.weather.WeatherModel"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="currentWind"
+            app:argType="com.tanyareznikova.openweather.domain.model.weather.WeatherModel"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="currentCity"
+            app:argType="com.tanyareznikova.openweather.domain.model.weather.WeatherModel"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="currentIcon"
+            app:argType="com.tanyareznikova.openweather.domain.model.weather.WeatherModel"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="hourlyweather"
+            app:argType="com.tanyareznikova.openweather.domain.model.forecast.ForecastModel"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="dailyDate"
+            app:argType="com.tanyareznikova.openweather.domain.model.forecast.ForecastModel"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="dailyIcon"
+            app:argType="com.tanyareznikova.openweather.domain.model.forecast.ForecastModel"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="dailyTemp"
+            app:argType="com.tanyareznikova.openweather.domain.model.forecast.ForecastModel"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="dailyWind"
+            app:argType="com.tanyareznikova.openweather.domain.model.forecast.ForecastModel"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_weatherFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+</navigation>
